@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="scoreboard">
+            <div class="score1">
+                <p> YOUR SCORE</p>
+                <h1>0</h1>
+            </div>
+            <div class="title">
+                <img src="title.png">
+            </div>
+            <div class="score2">
+                <p>COMPUTER SCORE</p>
+                <h1>0</h1>
+            </div>
+        </div>
+        <div class="hands">
+            <div class="circle paper">
+                <img src="Paper.png" >
+            </div>
+            <div class="circle scissor">
+                <img src="Scissors.png" >
+            </div>
+            <div class="circle rock">
+                <img src="Rock.png" >
+            </div>
+        </div>
+        <div class="contest">
+            <div class="userhand box" >
+                <h1>YOU PICKED</h1>
+                <div class="handImageContainer">
+                    <img id="userPickImage" src="Paper.png">
+                </div>
+            </div>
+            <div class="referee box">
+                <div class="decision"><h1>YOU WIN</h1></div>
+                <div class="newgame">PLAY AGAIN</div>
+            </div>
+            <div class="computerhand box">
+                <h1>COMPUTER PICKED</h1>
+                <div class="handImageContainer">
+                    <img id="ComputerPickImage" src="Paper.png">
+                </div>
+            </div>
+        </div>
+        <div class="newgamebtn">RESET SCORE</div>
+    </div>
+
+    <script src="app.js">
+
+    </script>
+</body>
+</html>

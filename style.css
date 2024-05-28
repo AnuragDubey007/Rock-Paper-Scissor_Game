@@ -1,0 +1,252 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* <uniquifier>: Use a unique and descriptive class name */
+/* <weight>: Use a value from 100 to 900 */
+
+/* // <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900 */
+
+.merriweather-black-italic {
+    font-family: "Merriweather", serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+  
+
+  body{
+    transition: all 0.15s;
+  }
+  
+
+.wrapper {
+    width: 100vw;
+    height: 80em;
+    background: radial-gradient(
+        134.34% 134.34% at 50% 0%,
+        #1f3757 0%,
+        #131537 100%
+    );
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.scoreboard {
+    width: 40%;
+    border: 1px solid white;
+    border-radius: 15px;
+    margin-top: 50px;
+    height: 150px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: transform 0.3s;
+    transform-origin: center;
+    box-shadow: 2.2em 2.2em 3cap #040e2c;
+}
+
+/* .scoreboard:hover {
+    animation: rotateY 1s forwards; /* Apply rotation animation when hovered 
+    box-shadow: 2.2em 2.2em 3cap #040e2c;
+} */
+
+/* @keyframes rotateY {
+    0% { transform: rotateY(0deg); }
+    100% { transform: rotateY(360deg); }
+} */ 
+
+.title{
+    height: 2px;
+    display: flex;
+    align-items: center;
+}
+.title img{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.score1{
+    width:30%;
+    height: 114px;
+    background-color: white;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+    text-align: center;
+}
+.score2{
+    width:30%;
+    height: 114px;
+    background-color: white;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.score h1{
+    color:#565468;
+}
+.score1 p{
+    color:#f01414;
+    font-size: 1.35em;
+    font-weight:900;
+    line-height: 1.875em;
+    letter-spacing:0.1em;
+}
+.score2 p{
+    
+    width: 100%;
+    color:#2a45c2;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 1.35em;
+    font-weight:900;
+    line-height: 1.375em;
+    letter-spacing:0.1em;
+    
+}
+
+.hands{
+    background-image:url("triangle.png") ;
+    background-repeat:no-repeat ;
+    width:100%;
+    max-width: 476px;
+    height: 430px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-position: center;
+    margin-top: 150px;
+    
+}
+
+
+.scissor{
+    margin-left: 20px;
+}
+
+.paper{
+    margin-right: 20px;
+}
+
+.circle:hover{
+    cursor: pointer;
+    transition: all 0.4s;
+   transform: translate3d(0px, -8px, 0px);
+   box-shadow: 2.2em 2.2em 3cap #040e2c;
+   
+
+}
+
+
+#userPickImage:hover {
+    cursor: pointer;
+    transition: all 0.4s;
+    transform: translate3d(0px, -8px, 0px);
+    box-shadow: 2.2em 2.2em 3cap #040e2c;
+}
+
+
+#ComputerPickImage:hover {
+    cursor: pointer;
+    transition: all 0.4s;
+    transform: translate3d(0px, -8px, 0px);
+    box-shadow: 2.2em 2.2em 3cap #040e2c;
+}
+
+.contest{
+    width:80%;
+    display: none;
+    margin-top: 50px;
+    
+}
+
+.contest img{
+    width: 100%;
+    height: 275px;
+}
+
+.contest>div{
+    flex: 1;
+}
+
+.contest h1{
+    color: white;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.referee h1{
+    font-size: 45px;
+}
+
+
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.newgame{
+    background-color: white;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-size: 1.2em;
+    font-weight: 900;
+    cursor: pointer;
+    color: hsl(229, 25%, 31%);
+    transition: all 0.3s;
+}
+
+.newgame:hover{
+    transform: translate3d(0px, -8px, 0px);
+   box-shadow: 1em 1em 2cap #040e2c;
+}
+
+.newgamebtn{
+    height: 90px;
+    width: 15%;
+    background-color: white;
+    border-radius: 6px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: hsl(229, 25%, 31%);
+    transition: all 0.15s; 
+    font-size: 2em ;
+    font-weight: 400;
+    margin-top: 90px;
+    display: none;
+}
+
+
+
+.newgamebtn:hover{transition: all 0.4s;
+   transform: translate3d(0px, -8px, 0px);
+   box-shadow: 1em 1em 2cap #040e2c;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .newgamebtn {
+        font-size: 1.5em; /* Adjust font size for smaller screens */
+    }
+}
